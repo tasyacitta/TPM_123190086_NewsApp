@@ -4,6 +4,7 @@ Raden Rara Lydia Devina S <br>
 TPM IF-E <br>
 UPN "Veteran" Yogyakarta <br>
 ## [Demo Program](https://youtu.be/DRFr0F-7j3g) <br>
+## [Demo Mobile](https://youtu.be/Fx72VV2PlbE) <br>
 ## [Link API](https://newsapi.org/v2/top-headlines?country=id)
 
 
