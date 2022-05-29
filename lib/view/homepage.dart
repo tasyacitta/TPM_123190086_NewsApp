@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashboard"),
+        title: const Text("News Mobile App"),
         backgroundColor: Color(0xff885566),
       ),
       body: const LoginPage(),

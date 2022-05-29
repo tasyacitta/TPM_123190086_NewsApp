@@ -31,21 +31,25 @@ class Detail extends StatelessWidget {
             margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
                   '$title',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontFamily: 'Raleway'),
                 ),
                 SizedBox(height: 10),
                 Text(
                   '$publishedAt',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
-                SizedBox(height: 10),
-                Text('$content'),
                 Divider(),
+                SizedBox(height: 20),
+                Text('$content', textAlign: TextAlign.justify, style: TextStyle( fontFamily: 'Raleway', fontSize: 16)),
+                Divider(height: 40,),
                 Text('Penulis: $author'),
-                Text('Sumber: $url'),
+                SizedBox(height: 5),
+                Text('Sumber: $url',textAlign: TextAlign.justify,style: TextStyle( fontFamily: 'Raleway')),
               ],
             ),
           )

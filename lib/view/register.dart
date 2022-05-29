@@ -21,21 +21,21 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Register Page"),
+        title: const Text("Registration Page"),
         backgroundColor: Color(0xff885566),
       ),
       body: Container(
         color: Color(0xFFFCE4EC),
-        padding: EdgeInsets.fromLTRB(200, 20, 100, 20),
+        padding: EdgeInsets.all (20),
         child: Column(
           children: [
             Center(
               child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
-                    'register.png',
-                    width: 300,
-                    height: 300,
+                    'assets/register.png',
+                    width: 150,
+                    height: 150,
                     fit: BoxFit.cover,
                   )),
             ),
@@ -105,7 +105,7 @@ class _RegisterPageState extends State<RegisterPage> {
     required Function(String) submitCallback,
   }) {
     return Container(
-      padding: EdgeInsets.fromLTRB(200, 30, 200, 0),
+      padding: EdgeInsets.only(top: 10),
       width: MediaQuery.of(context).size.width,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(

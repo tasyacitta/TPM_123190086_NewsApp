@@ -35,7 +35,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Container(
       color: Color(0xFFFCE4EC),
-      padding: EdgeInsets.fromLTRB(200, 50, 100, 20),
+      padding: EdgeInsets.all(20),
       child: Form(
         key: _formKey,
         child: Column(
@@ -44,13 +44,21 @@ class _LoginPageState extends State<LoginPage> {
               child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
-                    'journal.png',
-                    width: 200,
-                    height: 200,
+                    'assets/journal.png',
+                    width: 70,
+                    height: 70,
                     fit: BoxFit.cover,
                   )),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
+            Text(
+              "News Mobile App",
+              style: TextStyle(
+                  color: Colors.pinkAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17),
+            ),
+            SizedBox(height: 10),
             TextFormField(
               controller: _usernameController,
               decoration: const InputDecoration(
@@ -72,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
               validator: (value) =>
                   value!.isEmpty ? 'Username cannot be blank' : null,
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             TextFormField(
               controller: _passwordController,
               decoration: const InputDecoration(
@@ -111,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
     required Function(String) submitCallback,
   }) {
     return Container(
-      padding: EdgeInsets.fromLTRB(200, 30, 200, 0),
+      padding: EdgeInsets.only(top: 10),
       width: MediaQuery.of(context).size.width,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
